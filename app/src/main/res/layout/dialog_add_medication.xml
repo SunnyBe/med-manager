@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialog_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Medication"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/dialog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_below="@id/dialog_heading"
+        android:hint="Name of Medication"/>
+
+    <EditText
+        android:id="@+id/dialog_descr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/dialog_name"
+        android:hint="Enter Little description"/>
+    <EditText
+        android:id="@+id/dialog_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="datetime"
+        android:layout_below="@id/dialog_descr"
+        android:hint="Duration"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_date_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dialog_duration">
+
+        <Button
+            android:id="@+id/dialog_start_date"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="Start date" />
+
+        <Button
+            android:id="@+id/dialog_stop_date"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="Stop date"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_dates_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dialog_date_container">
+
+        <EditText
+            android:id="@+id/dialog_start_date_editText"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:hint="Start date" />
+
+        <EditText
+            android:id="@+id/dialog_end_date_editText"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:hint="End date" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_dates_container"
+        android:text="Submit"/>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Med Manager</string>
+    <string name="label_submit"></string>
+    <string name="label_allmedication">All Medications</string>
+</resources>

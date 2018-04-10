@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150sp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="5px">
+    <!--android:background="@drawable/img_signin_bg"-->
+
+    <LinearLayout
+        android:id="@+id/layout_head_content"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/layout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:text="Paracetamol"
+            android:textColor="@android:color/white"
+            android:layout_weight="10"
+            android:layout_marginLeft="5px"/>
+
+        <TextView
+            android:id="@+id/layout_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150sp"
+            android:textColor="@android:color/white"
+            android:layout_weight="10"
+            tools:text="2 today" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layout_desc"
+        style="@style/MainMedicDescriptionText"
+        android:layout_marginTop="30dp"
+        android:background="@color/main_bg"
+        tools:text="This is a kinda description for the drug that is called paracetamol"/>
+
+    <LinearLayout
+        android:id="@+id/layout__content"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:orientation="horizontal"
+        android:background="@color/main_bg"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/layout_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:text="20-03-2017"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="10"
+            android:layout_marginLeft="5px"/>
+
+        <TextView
+            android:id="@+id/layout_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="10"
+            tools:text="20-04-2017" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
